@@ -1,0 +1,246 @@
+body {
+  background-image: url(back1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin: auto;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container h1 {
+  display: flex;
+  /* -webkit-text-stroke: 1px black; */
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 5px  black;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+}
+.conform {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+#form1 input {
+  appearance: none;
+  outline: none;
+  width: 25rem;
+  height: 2rem;
+  font-size: 18px;
+  border: 2px solid black;
+  border-right-color: transparent;
+  border-radius: 5px 0px 0px 5px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0.379);
+  color: #f2efef;
+  user-select: none;
+  cursor: auto;
+}
+#form1 input:focus {
+  box-shadow: inset 0px 0px 5px 0px rgb(82, 239, 38);
+  border: 2px solid rgb(1, 1, 1);
+  border-right-color: transparent;
+}
+#form1 input::placeholder {
+  color: #e4e4e4;
+}
+.addbtn {
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  height: 2.8rem;
+  border: 2px solid black;
+  border-left-color: transparent;
+  /* border-radius: 0px 10px 10px 0px; */
+  color: white;
+  cursor: pointer;
+  background-color: rgba(12, 12, 12, 0.809);
+  transition: all 0.1s;
+}
+.clrbtn{
+    font-size: 14px;
+    border-radius: 0px 10px 10px 0px;
+    height: 2.8rem;
+    border: 2px solid black;
+    border-left-color: transparent;
+    /* border-radius: 0px 10px 10px 0px; */
+    color: white;
+    cursor: pointer;
+    background-color: rgba(12, 12, 12, 0.809);
+    transition: all 0.1s;
+}
+.clrbtn:hover{
+    box-shadow: inset 0px 0px 5px 0px rgb(242, 85, 85);
+}
+.clrbtn:active{
+    background-color: rgba(12, 12, 12, 0.809);
+    box-shadow: none;
+}
+.addbtn:hover {
+  /* background-color: rgba(48, 48, 48, 0.903); */
+  box-shadow: inset 0px 0px 5px 0px rgb(119, 242, 85);
+}
+.addbtn:active {
+  background-color: rgba(12, 12, 12, 0.809);
+  box-shadow: none;
+}
+.taskcontainer {
+  width: 38rem;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  border: 2px solid green;
+  /* background-color:rgb(136, 110, 76); */
+  /* background-color: rgba(2, 2, 2, 0.169); */
+  border-radius: 8px;
+  padding: 15px 20px;
+  overflow-y: scroll;
+}
+.TASK {
+  width: 33rem;
+  height: auto;
+  max-height: 3rem;
+  display: flex;
+  font-size: 17px;
+  text-align: left;
+  border: 2px groove gray;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.491);
+  color: white;
+  flex-direction: row;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  gap: 15px;
+}
+.TASK p {
+  width: 80%;
+  overflow: hidden;
+}
+.btngrp {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  appearance: none;
+  border-radius: 20%;
+  cursor: pointer;
+  /* background-color: rgb(253, 0, 0); */
+  background-color: transparent;
+  border: none;
+  padding: 4px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.deletebtn {
+  background-color: rgb(236, 7, 7);
+  /* border: 1px solid rgb(112, 110, 110); */
+}
+.editbtn {
+  background-color: gray;
+  border: 1px solid rgb(112, 110, 110);
+}
+.tickbtn{
+    background-color: rgb(5, 198, 5);
+    border: 1px solid rgb(112, 110, 110);
+}
+.deletebtn:hover {
+  background-color: rgb(249, 57, 57);
+}
+.editbtn:hover {
+  background-color: rgb(161, 161, 161);
+}
+.tickbtn:hover{
+    background-color: rgb(11, 225, 11);
+}
+.deletebtn:active {
+  border: 1px solid rgb(0, 0, 0);
+}
+.editbtn:active {
+  border: 1px solid black;
+}
+.tickbtn:active{
+    border: 1px solid black;
+}
+
+
+/* scroll bar  */
+/* width */
+.taskcontainer::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.taskcontainer::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.194);
+}
+
+/* Handle */
+.taskcontainer::-webkit-scrollbar-thumb {
+  background: #29850583;
+  width: 7px;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.taskcontainer::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 100, 0, 0.48);
+}
+
+@keyframes removeAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes addAnimation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.TASK input {
+  appearance: none;
+  outline: none;
+  font-size: 18px;
+  border: none;
+  /* width: auto; */
+  width: 60%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 10px 0;
+  background-color: rgba(0, 0, 0, 0.308);
+  color: #f2efef;
+}

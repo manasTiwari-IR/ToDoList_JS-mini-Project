@@ -1,0 +1,94 @@
+@media screen and (max-width: 730px) {
+  .container h1 {
+    font-size: 2.3rem;
+  }
+  #form1 input {
+    font-size: 16px;
+    width: 16rem;
+    height: 1.6rem;
+  }
+  .TASK {
+    width: 90%;
+  }
+  .taskcontainer {
+    width: 85%;
+  }
+  .addbtn {
+    font-size: 14px;
+    height: 2.4rem;
+  }
+  .clrbtn {
+    height: 2.4rem;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+  #form1 input {
+    font-size: 14px;
+    width: 10rem;
+    height: 1.3rem;
+  }
+  .taskcontainer {
+    width: 80%;
+  }
+  .TASK {
+    width: 87%;
+  }
+  .TASK p {
+    font-size: 14px;
+  }
+  .TASK input {
+    font-size: 14px;
+  }
+  .btn {
+    width: 27px;
+    height: 27px;
+  }
+  .addbtn {
+    font-size: 12px;
+    height: 2.1rem;
+  }
+  .clrbtn {
+    height: 2.1rem;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 321px) {
+  .container h1 {
+    font-size: 1.8rem;
+  }
+  #form1 input {
+    font-size: 12px;
+    width: 7rem;
+    height: 1rem;
+  }
+  .TASK {
+    width: 85%;
+  }
+  .TASK p {
+    font-size: 12px;
+  }
+  .TASK input {
+    font-size: 12px;
+  }
+  .taskcontainer {
+    width: 80%;
+  }
+  .btn {
+    width: 23px;
+    height: 23px;
+  }
+  .addbtn {
+    font-size: 10px;
+    margin: auto;
+    padding: 5px;
+    height: 1.8rem;
+  }
+  .clrbtn {
+    height: 1.8rem;
+    font-size: 10px;
+  }
+}

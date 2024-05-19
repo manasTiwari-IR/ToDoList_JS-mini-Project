@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reponsive.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <h1>
+                To Do List
+            </h1>
+            <div class="conform">
+                <form id="form1">
+                    <input type="text" id="input" placeholder="Enter your task here" maxlength="60" minlength="1"
+                        required autocomplete="off">
+                </form>
+                <button class="addbtn" onclick="addTask()">Add</button>
+                <button class="clrbtn" onclick="clearAll()">Clear All</button>
+            </div>
+        </div>
+
+        <div class="taskcontainer">
+
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
